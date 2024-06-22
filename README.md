@@ -1,15 +1,15 @@
 # Google Data Analytics Capstone: Cyclistic Case Study
 Course: [Google Data Analytics Capstone: Complete a Case Study](https://www.coursera.org/learn/google-data-analytics-capstone)
 ## Introduction
-In this case study, I will perform many real-world tasks of a junior data analyst at a fictional company, Cyclistic. In order to answer the key business questions, I will follow the steps of the data analysis process: [Ask](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/README.md#ask), [Prepare](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/README.md#prepare), [Process](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/README.md#process), [Analyze](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/README.md#analyze-and-share), [Share](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/README.md#analyze-and-share), and [Act](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study#act).
+In this case study, I will perform many real-world tasks of a junior data analyst at a fictional company, Cyclistic. In order to answer the key business questions, I will follow the steps of the data analysis process: [Ask](https://github.com/swagatobag2000/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/README.md#ask), [Prepare](https://github.com/swagatobag2000/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/README.md#prepare), [Process](https://github.com/swagatobag2000/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/README.md#process), [Analyze](https://github.com/swagatobag2000/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/README.md#analyze-and-share), [Share](https://github.com/swagatobag2000/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/README.md#analyze-and-share), and [Act](https://github.com/swagatobag2000/Google-Data-Analytics-Capstone-Cyclistic-Case-Study#act).
 ### Quick links:
-Data Source: [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html) [accessed on 04/03/23]  
+Data Source: [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html)  
   
 SQL Queries:  
-[01. Data Combining](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/01.%20Data%20Combining.sql)  
-[02. Data Exploration](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/02.%20Data%20Exploration.sql)  
-[03. Data Cleaning](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/03.%20Data%20Cleaning.sql)  
-[04. Data Analysis](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/04.%20Data%20Analysis.sql)  
+[01. Data Combining](https://github.com/swagatobag2000/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/01.%20Data%20Combining.sql)  
+[02. Data Exploration](https://github.com/swagatobag2000/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/02.%20Data%20Exploration.sql)  
+[03. Data Cleaning](https://github.com/swagatobag2000/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/03.%20Data%20Cleaning.sql)  
+[04. Data Analysis](https://github.com/swagatobag2000/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/04.%20Data%20Analysis.sql)  
   
 Data Visualizations: [Tableau](https://public.tableau.com/app/profile/somia.nasir/viz/bike-tripdata-casestudy/Dashboard1#1)  
 ## Background
@@ -25,33 +25,52 @@ Moreno has set a clear goal: Design marketing strategies aimed at converting cas
 ### Scenario
 I am assuming to be a junior data analyst working in the marketing analyst team at Cyclistic, a bike-share company in Chicago. The director of marketing believes the company’s future success depends on maximizing the number of annual memberships. Therefore, my team wants to understand how casual riders and annual members use Cyclistic bikes differently. From these insights, my team will design a new marketing strategy to convert casual riders into annual members. But first, Cyclistic executives must approve our recommendations, so they must be backed up with compelling data insights and professional data visualizations.
 
-## Ask
-### Business Task
-Devise marketing strategies to convert casual riders to members.
+## Ask 
+### Ask questions and define the problem.
+Asking the proper questions is the first step in the data analysis process. As a data analyst, it is important for me to understand why I am doing the analysis and what I am attempting to accomplish. Understanding the stakeholders' expectations and keeping the lines of communication open help me characterize the issue. To guarantee that I have a thorough comprehension of the situation, I take the big picture into account when describing the issue.
 ### Analysis Questions
 Three questions will guide the future marketing program:  
 1. How do annual members and casual riders use Cyclistic bikes differently?  
 2. Why would casual riders buy Cyclistic annual memberships?  
 3. How can Cyclistic use digital media to influence casual riders to become members?  
 
-Moreno has assigned me the first question to answer: How do annual members and casual riders use Cyclistic bikes differently?
+In this case study I will focus on the first question. How do annual members and casual riders use Cyclistic bikes differently?
+### Business Task
+To investigate the variations between how casual and member riders use Cyclistic. The idea is to use this data to create a new marketing campaign to get casual riders to become annual members.
+### Identify key stakeholders.
+ - The director of marketing: who is responsible for the development of campaigns and initiatives to promote the bike-share program.
+ - The Cyclistic executive team: who is notoriously detail-oriented and will decide whether to approve the recommended marketing program.
+ - The Cyclistic marketing analytics team: which is a team of data analysts who are responsible for collecting, analysing, and reporting data that helps guide marketing strategies.
 ## Prepare
+### Prepare the data by collecting and storing data.
+The preparation of the data is the second step in the data analysis process. This entails gathering or applying information pertinent to the issue I'm attempting to solve. During this stage, I must comprehend the many metrics needed for analysis and ascertain whether the data is internal or external by locating it. When handling the data, it's also crucial to take any required security precautions into account.
 ### Data Source
-I will use Cyclistic’s historical trip data to analyze and identify trends from Jan 2022 to Dec 2022 which can be downloaded from [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html). The data has been made available by Motivate International Inc. under this [license](https://www.divvybikes.com/data-license-agreement).  
+I will use Cyclistic’s historical trip data to analyze and identify trends from Jan 2022 to Dec 2022 which can be downloaded from [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html).  
   
 This is public data that can be used to explore how different customer types are using Cyclistic bikes. But note that data-privacy issues prohibit from using riders’ personally identifiable information. This means that we won’t be able to connect pass purchases to credit card numbers to determine if casual riders live in the Cyclistic service area or if they have purchased multiple single passes.
 ### Data Organization
 There are 12 files with naming convention of YYYYMM-divvy-tripdata and each file includes information for one month, such as the ride id, bike type, start time, end time, start station, end station, start location, end location, and whether the rider is a member or not. The corresponding column names are ride_id, rideable_type, started_at, ended_at, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng and member_casual.
-
+### Data Credibility ROCC?
+ This data ROCCCs! Taken from Divvy’s public historical trip data, this data is. 
+ - Reliable: this data is accurate, complete, and unbiased.
+ - Original: this data is validated by the original source 
+ - Comprehensive: this data contains all the critical information to answer the questions 
+ - Current: this data is useful with time pass 
+ - Cited: this data is credible and citied from this source [Here](https://divvy-tripdata.s3.amazonaws.com/index.html)
+### Data License
+ - The data is maintained and made available by Motivate International Inc. under this [license](https://www.divvybikes.com/data-license-agreement).
+ - Tat data-privacy issues prohibit me from using riders’ personally identifiable information. 
+ - I won’t be able to connect pass purchases to credit card numbers to determine if casual riders live in the Cyclistic service area or if they have purchased multiple single passes.
 ## Process
+### Process the data by cleaning and checking the information
 BigQuery is used to combine the various datasets into one dataset and clean it.    
 Reason:  
 A worksheet can only have 1,048,576 rows in Microsoft Excel because of its inability to manage large amounts of data. Because the Cyclistic dataset has more than 5.6 million rows, it is essential to use a platform like BigQuery that supports huge volumes of data.
 ### Combining the Data
-SQL Query: [Data Combining](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/01.%20Data%20Combining.sql)  
+SQL Query: [Data Combining](https://github.com/swagatobag2000/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/01.%20Data%20Combining.sql)  
 12 csv files are uploaded as tables in the dataset '2022_tripdata'. Another table named "combined_data" is created, containing 5,667,717 rows of data for the entire year. 
 ### Data Exploration
-SQL Query: [Data Exploration](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/02.%20Data%20Exploration.sql)  
+SQL Query: [Data Exploration](https://github.com/swagatobag2000/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/02.%20Data%20Exploration.sql)  
 Before cleaning the data, I am familiarizing myself with the data to find the inconsistencies.  
 
 Observations:  
@@ -86,14 +105,14 @@ Observations:
 11. Columns that need to be removed are start_station_id and end_station_id as they do not add value to analysis of our current problem. Longitude and latitude location columns may not be used in analysis but can be used to visualise a map.
 
 ### Data Cleaning
-SQL Query: [Data Cleaning](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/03.%20Data%20Cleaning.sql)  
+SQL Query: [Data Cleaning](https://github.com/swagatobag2000/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/03.%20Data%20Cleaning.sql)  
 1. All the rows having missing values are deleted.  
 2. 3 more columns ride_length for duration of the trip, day_of_week and month are added.  
 3. Trips with duration less than a minute and longer than a day are excluded.
 4. Total 1,375,912 rows are removed in this step.
   
 ## Analyze and Share
-SQL Query: [Data Analysis](https://github.com/SomiaNasir/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/04.%20Data%20Analysis.sql)  
+SQL Query: [Data Analysis](https://github.com/swagatobag2000/Google-Data-Analytics-Capstone-Cyclistic-Case-Study/blob/main/04.%20Data%20Analysis.sql)  
 Data Visualization: [Tableau](https://public.tableau.com/app/profile/somia.nasir/viz/bike-tripdata-casestudy/Dashboard1#1)  
 The data is stored appropriately and is now prepared for analysis. I queried multiple relevant tables for the analysis and visualized them in Tableau.  
 The analysis question is: How do annual members and casual riders use Cyclistic bikes differently?  
@@ -148,3 +167,11 @@ Recommendations:
 1. Marketing campaigns might be conducted in spring and summer at tourist/recreational locations popular among casual riders.
 2. Casual riders are most active on weekends and during the summer and spring, thus they may be offered seasonal or weekend-only memberships.
 3. Casual riders use their bikes for longer durations than members. Offering discounts for longer rides may incentivize casual riders and entice members to ride for longer periods of time.
+
+## Conclusion
+Thank you for taking the time to review my capstone project! This project allowed me to go through the entire data analysis process using real-world data and business questions. I accomplished this using Excel, SQL, BigQuery, RStudio, and visualized my findings using Tableau. I am excited to continue growing in the field of data analysis.
+
+## Reference
+
+1. [Linkedin Post](https://www.linkedin.com/pulse/google-data-analytics-capstone-case-study-1-cyclisti-mostafa-elsobky/)
+2. [GitHub](https://github.com/swagatobag2000/Google-Data-Analytics-Capstone-Cyclistic-Case-Study)
